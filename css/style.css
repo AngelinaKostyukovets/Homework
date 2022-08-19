@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+}
+
+/* section  awesome*/
+
+.wrapper{
+    max-width: 1200px;
+    padding: 50px 15px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    padding-top: 5px;
+}
+
+.separator{
+    width: 170px;
+    border-top: 1px solid #EC7979;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.title-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+    margin-top: 40px;
+}
+
+.all-cards{
+    margin-top: 110px;
+}
+
+.card{
+    width: 370px;
+    display: inline-block;
+}
+
+.card__img{
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-bulb{
+    padding-top: 8px;
+}
+
+.img-key{
+    padding-top: 22px;
+}
+
+.img-energy{
+    padding-top: 15px;
+}
+
+.card__title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    padding: 38px 0;
+    margin-top: 39px;
+}
+
+.card__description{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 8px 0;
+}
+
+.card-m{
+    margin: 0 25px;
+}
+
+/* section  pricing*/
+
+.pricing{
+    background: #F5F5F5;
+}
+
+.pricing-content{
+    margin-top: 60px;
+}
+
+.pricing-card{
+    width: 370px;
+    display: inline-block;
+}
+
+.pricing-list__item{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;   
+    background: #FFFFFF;
+    color: #86878B;
+    padding: 15px 0;
+    border: 1px solid #F5F5F5;
+    text-transform: capitalize; 
+    text-align: center;  
+}
+
+.pricing-list__item--tarif,
+.pricing-list__item--cost,
+.pricing-list__item--text{
+    background: #333333;
+    color: #FFFFFF;
+}
+
+
+.pricing-list__item--tarif{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+
+}
+
+.pricing-list__item--cost{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 30px 0;
+}
+
+.pricing-list__item--text{
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: none;
+}
+
+.pricing-card--top{
+    margin: 0 25px;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+}
