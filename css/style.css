@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -6,6 +6,71 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
+}
+
+/* section tabs */
+
+.tabs-list{
+    display: flex;
+}
+
+.tabs-list__item{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px 81px;
+}
+
+.tabs-list__item--active{
+    border: 1px solid #C6CBCD;
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+    border-radius: 3px 3px 0 0;
+    /* background-color: white; */
+}
+
+.tabs-content{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #C6CBCD;
+}
+
+.tabs-card{
+    margin-left: 100px;
+}
+
+.tabs__title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin-top: 41px;
+}
+
+.tabs-description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 570px;
+    margin-top: 68px;
+}
+
+.tabs-description--down-text{
+    margin-top: 21px;
+}
+
+.tabs__button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background: #EC7979;
+    width: 270px;
+    padding: 17px 0;
+    border: none;
+    margin-top: 27px;
 }
 
 /* section  awesome*/
