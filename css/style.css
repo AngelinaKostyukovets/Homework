@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
+    text-decoration: none;
 }
 
 /* repeted part */
@@ -37,18 +38,22 @@
     display: flex;
 }
 
-.tabs-list__item{
+.btn-item{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     padding: 10px 81px;
+    background-color: white;
+    border: none;
 }
 
-.tabs-list__item--active{
+.btn-item--active{
     border: 1px solid #C6CBCD;
     border-bottom: 1px solid white;
     margin-bottom: -1px;
+    /* position: relative;
+    top: 1px; */
     border-radius: 3px 3px 0 0;
     /* background-color: white; */
 }
@@ -60,7 +65,7 @@
 }
 
 .tabs-card{
-    margin-left: 100px;
+    padding: 41px 0 0 100px;
 }
 
 .tabs__title{
@@ -68,7 +73,6 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 41px;
-    margin-top: 41px;
 }
 
 .tabs-description{
@@ -83,17 +87,25 @@
     margin-top: 21px;
 }
 
-.tabs__button{
+.tabs__btn a{
+    color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
+}
+
+.tabs__btn{
+    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
     background: #EC7979;
+    text-align: center;
     width: 270px;
     padding: 17px 0;
-    border: none;
     margin-top: 27px;
+}
+
+.img-statue{
+    display: block;
 }
 
 /* section  awesome*/
