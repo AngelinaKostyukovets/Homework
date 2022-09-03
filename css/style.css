@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap');
+@import url(cdn.css);
 
 *{
     margin: 0;
@@ -35,7 +35,133 @@
     background: #EC7979;
     bottom: 0;
     left: calc(50% - 85px);
-    /* margin-top: 55px; */
+}
+
+.wrapper--slim{
+    padding: 0 15px;
+}
+
+/* header */
+
+.header{
+    background: black;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-list{
+    display: flex;
+}
+
+.navigation-list__item{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    width: 113px;
+    padding: 27.6px 0;
+    
+}
+
+.navigation-list__item a{
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.navigation-list__item a:hover{
+    color: #EC7979;
+    transition: 0.3s;
+}
+
+/* section s-media */
+
+.s-media{
+    background: #F8EFEF;
+}
+
+.media-content{
+    display: flex;
+}
+
+.media-text{
+    padding: 13.5px 30px 0 0;
+}
+
+.media__title{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.media__description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 31.5px;
+    color: #86878B;
+}
+
+.media-icons{
+    display: flex;
+    padding: 35px 0;
+}
+
+.media-icons__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.media-icons__item:not(:first-child){
+    margin-left: 35px;
+}
+
+.social-svg{
+    fill: #CCCCCC;
+    transition: 0.5s;
+}
+
+.social-svg:hover{
+    transform: scale(1.3);
+}
+
+.media-facebook:hover{
+    fill: #3b5998;
+}
+
+.media-twitter:hover{
+    fill: #1faee9;
+}
+
+.media-linkedin:hover{
+    fill: #0e76a8;
+}
+
+.media-pinterest:hover{
+    fill: #c8232c;
+}
+
+.media-instagram:hover{
+    fill:  #3f729b;
+}
+
+.media-github:hover{
+    fill: #171515;
+}
+
+.media-rss:hover{
+    fill:  #ee802f;
 }
 
 /* section tabs */
@@ -60,12 +186,14 @@
     position: relative;
     top: 1px;
     border-radius: 3px 3px 0 0;
+    background: #FFFFFF;
 }
 
 .tabs-content{
     display: flex;
     justify-content: space-between;
     border: 1px solid #C6CBCD;
+    background: #FFFFFF;
 }
 
 .tabs-card{
@@ -315,4 +443,151 @@
 .customers__img--cooper{
     top: -5px;
     left: -18px;
+}
+
+/* section banner */
+
+.banner{
+    background: url(../assets/img/banner-img.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: 0;
+}
+
+.banner:after{
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* width: 370px; */
+    width: 31.8%;
+    padding: 17px 0;
+    border: 2px solid #FFFFFF;
+    margin: 73px auto 0;
+}
+
+.banner-btn a,
+.title--color,
+.title-description--color{
+    color: white;
+}
+
+.title--color:after{
+    background-color: white;
+}
+
+/* footer */
+
+.footer{
+    background: #000000;
+}
+
+.footer-content{
+    padding: 35px 0 27px;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons__item{
+    display: flex;
+    width: 53.2px;
+    height: 53.2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons__item:not(:first-child){
+    margin-left: 35px;
+}
+
+.fa-brands,
+.fa-solid{
+    color:  #CCCCCC;
+    transition: 0.5s;
+}
+
+.fa-brands:hover,
+.fa-solid:hover{
+    transform: rotate(90deg);
+}
+
+.fa-facebook-f{
+    font-size: 42.12px;
+}
+
+.fa-twitter{
+    font-size: 35.38px;
+}
+
+.fa-linkedin{
+    font-size: 40px;
+}
+
+.fa-pinterest{
+    font-size: 44.33px;
+}
+
+.fa-instagram{
+    font-size: 40px;
+}
+
+.fa-github{
+    font-size: 43.13px;
+}
+
+.fa-rss{
+    font-size: 34.5px;
+}
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+}
+
+.fa-twitter:hover{
+    color: #1faee9;
+}
+
+.fa-linkedin:hover{
+    color: #0e76a8;
+}
+
+.fa-pinterest:hover{
+    color: #c8232c;
+}
+
+.fa-instagram:hover{
+    color: #3f729b;
+}
+
+.fa-github:hover{
+    color: #690303;
+}
+
+.fa-rss:hover{
+    color: #ee802f;
+}
+
+.footer-comment{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 27.8px;
 }
